@@ -1,0 +1,29 @@
+<div class="container">
+  <table>
+    <thead>
+      <tr>
+        <th class="one">S.no</th>
+        <th class="two">User name</th>
+        <th class="three">Contact No</th>
+        <th class="four">Course name</th>
+        <th class="five">Course Duration</th>
+        <th class="six">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of arr; let i = index">
+        <td>{{ i }}</td>
+        <td>{{ item.userName }}</td>
+        <td>{{ item.userContact }}</td>
+        <td>{{ item.courseName }}</td>
+        <td>{{ item.courseDuration }}</td>
+        <td class="btn-container">
+          <div class="btns">
+            <button class="accept" (click)="onAccept(i)">Accept</button>
+            <button class="decline" (click)="onReject(i)">Decline</button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

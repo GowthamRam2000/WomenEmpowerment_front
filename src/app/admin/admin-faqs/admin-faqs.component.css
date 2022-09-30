@@ -1,0 +1,89 @@
+.container {
+  width: 100rem;
+  height: 25rem;
+  margin: 3rem auto;
+}
+
+.container-buttom {
+  width: 100rem;
+  height: 25rem;
+  margin: 0rem auto;
+}
+
+.header {
+  font-family: "Rubik", sans-serif;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+table {
+  font-family: "Rubik", sans-serif;
+  border-collapse: collapse;
+  font-size: 2rem;
+}
+
+thead {
+  background-color: black;
+  color: white;
+  height: 5rem;
+}
+
+thead td {
+  padding-left: 1rem;
+  font-weight: bold;
+}
+
+.one {
+  width: 10rem;
+}
+
+.two {
+  width: 35rem;
+}
+
+.three {
+  width: 35rem;
+}
+
+.four {
+  width: 20rem;
+}
+
+.btn-container {
+  padding: 5px 10px;
+}
+
+.btn {
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: white;
+  padding: 8px 24px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #24963e;
+}
+
+tbody tr input {
+  margin-left: 1rem;
+  width: 100%;
+  height: 4rem;
+  overflow: auto;
+  font-size: 2rem;
+  font-family: "Rubik", sans-serif;
+
+  border: none;
+  outline: none;
+}
+
+tbody tr td div {
+  display: flex;
+  align-items: center;
+}
+
+.sno {
+  padding-left: 1rem;
+}

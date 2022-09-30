@@ -1,0 +1,84 @@
+.container {
+  width: 126rem;
+  margin: 7rem auto;
+  font-family: "Rubik", sans-serif;
+}
+
+table {
+  font-size: 2rem;
+  border-collapse: collapse;
+}
+
+thead tr {
+  height: 6rem;
+  text-align: left;
+  background-color: #000;
+  color: #fff;
+}
+
+thead th {
+  padding-left: 2rem;
+}
+
+.one {
+  width: 10rem;
+}
+
+.two,
+.three,
+.four {
+  width: 18rem;
+}
+
+.five {
+  width: 22rem;
+}
+
+.six {
+  width: 40rem;
+}
+
+tbody tr {
+  height: 6rem;
+}
+
+tbody td {
+  padding-left: 2rem;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+
+.btns {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btns button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 7px;
+  font-size: 2rem;
+}
+
+.accept {
+  background-color: #79b867;
+  color: white;
+  cursor: pointer;
+}
+
+.accept:hover {
+  background-color: #6da65d;
+}
+
+.decline {
+  background-color: #d8685d;
+  color: white;
+  cursor: pointer;
+}
+
+.decline:hover {
+  background-color: #c25e54;
+}

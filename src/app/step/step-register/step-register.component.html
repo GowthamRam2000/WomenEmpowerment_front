@@ -1,0 +1,218 @@
+<div class="container">
+  <form class="form" [formGroup]="regForm">
+    <div class="row-1">
+      <h1>Registration form</h1>
+    </div>
+
+    <!-- Firstname -->
+    <div class="row-2">
+      <div class="field">
+        <input
+          type="text"
+          placeholder="first name"
+          formControlName="firstName"
+          class="0"
+          #fname
+          (keyup)="inputData($event)"
+        />
+        <div class="icon">
+          <div *ngIf="!isTouched[0]"></div>
+          <div *ngIf="isTouched[0]" #notTouched>
+            <fa-icon
+              *ngIf="isValid[0]"
+              [icon]="faCircleCheck"
+              class="valid"
+            ></fa-icon>
+            <fa-icon
+              *ngIf="!isValid[0]"
+              [icon]="faCircleXmark"
+              class="invalid"
+              title=""
+            ></fa-icon>
+          </div>
+        </div>
+      </div>
+
+      <!-- last Name -->
+      <div class="field">
+        <input
+          type="text"
+          placeholder="last name"
+          formControlName="lastName"
+          class="1"
+          #lname
+          (keyup)="inputData($event)"
+        />
+        <div class="icon">
+          <div *ngIf="!isTouched[1]"></div>
+          <div *ngIf="isTouched[1]" #notTouched>
+            <fa-icon
+              *ngIf="isValid[1]"
+              [icon]="faCircleCheck"
+              class="valid"
+            ></fa-icon>
+            <fa-icon
+              *ngIf="!isValid[1]"
+              [icon]="faCircleXmark"
+              class="invalid"
+              title=""
+            ></fa-icon>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Username -->
+    <div class="row-3 field">
+      <input
+        type="text"
+        placeholder="Username"
+        formControlName="username"
+        class="2"
+        #username
+        (keyup)="inputData($event)"
+      />
+      <div class="icon">
+        <div *ngIf="!isTouched[2]"></div>
+        <div *ngIf="isTouched[2]" #notTouched>
+          <fa-icon
+            *ngIf="isValid[2]"
+            [icon]="faCircleCheck"
+            class="valid"
+          ></fa-icon>
+          <fa-icon
+            *ngIf="!isValid[2]"
+            [icon]="faCircleXmark"
+            class="invalid"
+            title=""
+          ></fa-icon>
+        </div>
+      </div>
+    </div>
+
+    <!-- Date of birth -->
+    <div class="row-4 field">
+      <input
+        type="date"
+        placeholder="Date of birth"
+        formControlName="dob"
+        class="3"
+        #dob
+        (change)="inputDate($event)"
+        (click)="dateClicked($event)"
+      />
+      <div class="icon">
+        <div *ngIf="!isTouched[3]"></div>
+        <div *ngIf="isTouched[3]" #notTouched>
+          <fa-icon
+            *ngIf="isValid[3]"
+            [icon]="faCircleCheck"
+            class="valid"
+          ></fa-icon>
+          <fa-icon
+            *ngIf="!isValid[3]"
+            [icon]="faCircleXmark"
+            class="invalid"
+            title=""
+          ></fa-icon>
+        </div>
+      </div>
+    </div>
+
+    <!-- Password -->
+    <div class="row-5 field">
+      <input
+        type="password"
+        placeholder="Password"
+        formControlName="password"
+        class="4"
+        #password
+        (keyup)="inputData($event)"
+      />
+      <div class="icon">
+        <div *ngIf="!isTouched[4]"></div>
+        <div *ngIf="isTouched[4]" #notTouched>
+          <fa-icon
+            *ngIf="isValid[4]"
+            [icon]="faCircleCheck"
+            class="valid"
+          ></fa-icon>
+          <fa-icon
+            *ngIf="!isValid[4]"
+            [icon]="faCircleXmark"
+            class="invalid"
+            title=""
+          ></fa-icon>
+        </div>
+      </div>
+    </div>
+
+    <!-- Confirm Password -->
+    <div class="row-6 field">
+      <input
+        type="text"
+        placeholder="Re-type password"
+        formControlName="confPassword"
+        class="5"
+        #confPass
+        (keyup)="confPassword()"
+      />
+      <div class="icon">
+        <div *ngIf="!isTouched[5]"></div>
+        <div *ngIf="isTouched[5]" #notTouched>
+          <fa-icon
+            *ngIf="isValid[5]"
+            [icon]="faCircleCheck"
+            class="valid"
+          ></fa-icon>
+          <fa-icon
+            *ngIf="!isValid[5]"
+            [icon]="faCircleXmark"
+            class="invalid"
+            title=""
+          ></fa-icon>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact number -->
+    <div class="row-7 field">
+      <input
+        type="text"
+        placeholder="Contact Number"
+        formControlName="contactNumber"
+        class="6"
+        #contact
+        (keyup)="inputData($event)"
+      />
+      <div class="icon">
+        <div *ngIf="!isTouched[6]"></div>
+        <div *ngIf="isTouched[6]" #notTouched>
+          <fa-icon
+            *ngIf="isValid[6]"
+            [icon]="faCircleCheck"
+            class="valid"
+          ></fa-icon>
+          <fa-icon
+            *ngIf="!isValid[6]"
+            [icon]="faCircleXmark"
+            class="invalid"
+            title=""
+          ></fa-icon>
+        </div>
+      </div>
+    </div>
+
+    <div class="row-8">
+      <button type="button" (click)="onRegister()">Register</button>
+    </div>
+  </form>
+</div>
+<!-- 
+      first name + last name
+      username
+      DOB   
+      password
+      re-type password
+      Contact number
+   -->

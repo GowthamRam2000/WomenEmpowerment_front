@@ -1,0 +1,89 @@
+.container {
+  width: 80rem;
+  height: 50px;
+  margin: 7rem auto;
+
+  font-family: "Rubik", sans-serif;
+}
+
+.header p {
+  font-size: 3.6rem;
+  font-weight: bold;
+  margin-bottom: 4rem;
+}
+
+.qna {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.question {
+  background-color: #f7f7f7;
+}
+
+.question,
+.answer {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.question div,
+.answer div {
+  font-size: 3.6rem;
+  font-weight: bold;
+}
+
+.question p,
+.answer p {
+  font-size: 2rem;
+  line-height: 1.7;
+}
+
+.question {
+  border-left: 5px solid #0f79e2;
+  padding-left: 2rem;
+}
+
+.answer {
+  border-left: 5px solid #ddd;
+  padding-left: 2rem;
+}
+
+.post-query {
+  border-top: 2px solid #ddd;
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+
+  display: flex;
+  gap: 2rem;
+}
+
+.post-query textarea {
+  font-family: "Rubik", sans-serif;
+  width: 69rem;
+  height: 3.5rem;
+
+  background-color: #f7f7f7;
+  border: none;
+  border-radius: 5px;
+  font-size: 2rem;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+.post-query button {
+  font-size: 2rem;
+  padding: 7px 22px;
+  border: none;
+  background-color: #0f79e2;
+  color: #fff;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.post-query button:hover {
+  background-color: #0e6dcb;
+}

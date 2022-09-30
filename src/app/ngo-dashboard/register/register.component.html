@@ -1,0 +1,161 @@
+<div class="container">
+  <div class="main-header">
+    <p>Registration Form</p>
+  </div>
+
+  <form [formGroup]="regForm">
+    <div class="personal-details details">
+      <div class="header">
+        <p>Organization Details</p>
+      </div>
+      <div class="form" formGroupName="orgDetails">
+        <div class="row-1">
+          <div>
+            <div><label for="fname">Organization Name</label></div>
+            <div>
+              <input type="text" id="fname" formControlName="orgName" />
+            </div>
+          </div>
+
+          <div>
+            <div><label for="lname">Founder</label></div>
+            <div>
+              <input type="text" id="lname" formControlName="founder" />
+            </div>
+          </div>
+
+          <div>
+            <div><label for="dob">Started In</label></div>
+            <div>
+              <input type="date" id="dob" formControlName="startedIn" />
+            </div>
+          </div>
+        </div>
+
+        <div class="row-2">
+          <div>
+            <div><label for="ano">Registration id</label></div>
+            <div><input type="text" id="ano" formControlName="regId" /></div>
+          </div>
+
+          <div>
+            <div><label for="e-details">Domain</label></div>
+            <div>
+              <input type="text" formControlName="domain" />
+            </div>
+          </div>
+
+          <div>
+            <div><label for="m-status">Net worth</label></div>
+            <div>
+              <input type="number" formControlName="networth" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-in-charge details" formGroupName="projectInCharge">
+      <div class="form">
+        <div class="header">
+          <p>Project-in-charge Details</p>
+        </div>
+
+        <div class="row-1">
+          <div>
+            <div><label for="">First name</label></div>
+            <div><input type="text" formControlName="firstName" /></div>
+          </div>
+
+          <div>
+            <div><label for="">Last name</label></div>
+            <div><input type="text" formControlName="lastName" /></div>
+          </div>
+
+          <div>
+            <div><label for="">Experince</label></div>
+            <div><input type="number" formControlName="experience" /></div>
+          </div>
+        </div>
+
+        <div class="row-2">
+          <div>
+            <div><label for="">Project name</label></div>
+            <div>
+              <input type="text" formControlName="projectName" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-details details" formGroupName="contactDetails">
+      <div class="header">
+        <p>Contact Details</p>
+      </div>
+      <div class="form">
+        <div class="row-1">
+          <div>
+            <div><label for="">Phone no</label></div>
+            <div><input type="number" id="" formControlName="phoneno" /></div>
+          </div>
+
+          <div>
+            <div><label for="">Email</label></div>
+            <div><input type="text" id="" formControlName="email" /></div>
+          </div>
+
+          <div>
+            <div><label for="">Address</label></div>
+            <div><input type="text" id="" formControlName="address" /></div>
+          </div>
+        </div>
+        <div class="row-2" id="contact-details-row-2">
+          <div>
+            <div><label for="">City</label></div>
+            <div><input type="text" id="" formControlName="city" /></div>
+          </div>
+
+          <div>
+            <div><label for="">State</label></div>
+            <div><input type="text" id="" formControlName="state" /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="course-details details" formGroupName="courseDetails">
+      <div class="header">
+        <p>Course Details</p>
+      </div>
+      <div class="form">
+        <div class="row-1" id="course-row-1">
+          <div>
+            <div><label for="">Course name</label></div>
+            <div><input type="text" id="" formControlName="courseName" /></div>
+          </div>
+
+          <div>
+            <div><label for="">Course duration</label></div>
+            <div>
+              <input type="text" id="" formControlName="courseDuration" />
+            </div>
+          </div>
+        </div>
+
+        <div class="course-details-row-2">
+          <div>
+            <div><label for="">Course description</label></div>
+            <div>
+              <textarea id="" formControlName="courseDescription"></textarea>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="final-row">
+      <button type="button" (click)="onRegister()">Register</button>
+    </div>
+  </form>
+</div>

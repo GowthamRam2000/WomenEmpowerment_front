@@ -1,0 +1,46 @@
+.container {
+  padding: 4.8rem;
+  font-family: "Rubik", sans-serif;
+}
+
+.guidelines1 h2 {
+  font-size: 3.6rem;
+  margin-bottom: 1.4rem;
+}
+
+.guidelines1 p {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.guidelines1 ul {
+  font-size: 2rem;
+  padding-left: 3rem;
+}
+.guidelines1 li {
+  margin-bottom: 1rem;
+}
+
+.guidelines2 {
+  margin-top: 2rem;
+}
+
+.guidelines2 h2 {
+  font-size: 3.6rem;
+  margin-bottom: 1.4rem;
+}
+
+.guidelines2 p {
+  font-size: 2rem;
+  line-height: 1.7;
+}
+
+.guidelines2 ul {
+  font-size: 2rem;
+  padding-left: 3rem;
+}
+
+.guidelines2 li {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}

@@ -1,0 +1,30 @@
+.container {
+  padding: 4.8rem;
+  font-family: "Rubik", sans-serif;
+}
+
+.container h1 {
+  font-size: 3.6rem;
+  margin-bottom: 1.8rem;
+}
+
+.container p {
+  font-size: 2rem;
+  line-height: 1.7;
+  margin-bottom: 2.4rem;
+}
+
+.obj h2 {
+  font-size: 3rem;
+  margin-bottom: 1.8rem;
+}
+
+.obj ul {
+  padding-left: 4.8rem;
+}
+
+.obj li {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  padding-left: 2rem;
+}

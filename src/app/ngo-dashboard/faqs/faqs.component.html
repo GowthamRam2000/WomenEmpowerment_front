@@ -1,0 +1,70 @@
+<div class="container">
+  <div class="header">
+    <p>Frequently Asked Question(FAQs)</p>
+  </div>
+
+  <div class="qna">
+    <div class="question">
+      <div>Q.</div>
+      <p>What is the minimum experience required to provide training ?</p>
+    </div>
+    <div class="answer">
+      <div>A.</div>
+      <p>There is no experience criteria to provide courses.</p>
+    </div>
+  </div>
+
+  <div class="qna">
+    <div class="question">
+      <div>Q.</div>
+      <p>Is the training provided online or offline ?</p>
+    </div>
+    <div class="answer">
+      <div>A.</div>
+      <p>
+        It totally depends on the NGO it self i.e., can be both online/offline.
+      </p>
+    </div>
+  </div>
+
+  <div class="qna">
+    <div class="question">
+      <div>Q.</div>
+      <p>Can we allow user to leave the course in between?</p>
+    </div>
+    <div class="answer">
+      <div>A.</div>
+      <p>
+        Yes the courses can be left in between but only if valid reason is
+        provided.
+      </p>
+    </div>
+  </div>
+
+  <div class="qna">
+    <div class="question">
+      <div>Q.</div>
+      <p>What is the maximum duration of the course?</p>
+    </div>
+    <div class="answer">
+      <div>A.</div>
+      <p>
+        Actually it depends on the domain itself. It way vary from 10hours to
+        70hours
+      </p>
+    </div>
+  </div>
+
+  <div class="user-faqs">
+    <div *ngFor="let question of userQuestions">
+      <app-faq [faq]="question"></app-faq>
+    </div>
+  </div>
+
+  <div class="post-query">
+    <div>
+      <textarea type="text" placeholder="Post a query" #query></textarea>
+    </div>
+    <div><button (click)="onPost()">Post</button></div>
+  </div>
+</div>

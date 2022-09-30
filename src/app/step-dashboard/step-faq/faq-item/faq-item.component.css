@@ -1,0 +1,39 @@
+.qna {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+
+.question {
+  background-color: #f7f7f7;
+}
+
+.question,
+.answer {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.question div,
+.answer div {
+  font-size: 3.6rem;
+  font-weight: bold;
+}
+
+.question p,
+.answer p {
+  font-size: 2rem;
+  line-height: 1.7;
+}
+
+.question {
+  border-left: 5px solid #0f79e2;
+  padding-left: 2rem;
+}
+
+.answer {
+  border-left: 5px solid #ddd;
+  padding-left: 2rem;
+}

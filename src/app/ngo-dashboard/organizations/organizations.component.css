@@ -1,0 +1,45 @@
+.container {
+  width: 80rem;
+  margin: 7rem auto;
+  font-family: "Rubik", sans-serif;
+}
+
+table {
+  font-size: 2rem;
+  border-collapse: collapse;
+}
+
+thead tr {
+  height: 5rem;
+  background-color: #0f79e2;
+  color: #fff;
+}
+
+.one {
+  width: 10rem;
+}
+
+.two {
+  width: 25rem;
+}
+
+.three {
+  width: 25rem;
+}
+
+.four {
+  width: 20rem;
+}
+
+tbody {
+  color: #888;
+}
+
+tbody tr {
+  text-align: center;
+  height: 5rem;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e7f2fc;
+}

@@ -1,0 +1,210 @@
+<div class="container">
+  <div class="main-header">
+    <p>Registration Form</p>
+  </div>
+
+  <form [formGroup]="regForm">
+    <div class="personal-details details" formGroupName="personalDetails">
+      <div class="header">
+        <p>Personal Details</p>
+      </div>
+      <div class="form">
+        <div class="row-1">
+          <div>
+            <div><label for="fname">First name</label></div>
+            <div>
+              <input type="text" id="fname" formControlName="firstName" />
+            </div>
+          </div>
+
+          <div>
+            <div><label for="lname">Last name</label></div>
+            <div>
+              <input type="text" id="lname" formControlName="lastName" />
+            </div>
+          </div>
+
+          <div>
+            <div><label for="dob">Date of Birth</label></div>
+            <div>
+              <input type="date" id="dob" formControlName="dateOfBirth" />
+            </div>
+          </div>
+        </div>
+
+        <div class="row-2">
+          <div>
+            <div><label for="ano">Aadhar no</label></div>
+            <div>
+              <input type="text" id="ano" formControlName="aadharNo" />
+            </div>
+          </div>
+
+          <div>
+            <div><label for="e-details">Education</label></div>
+            <div>
+              <select id="e-details" formControlName="education">
+                <option>No education</option>
+                <option>Under X</option>
+                <option>X completed</option>
+                <option>XI</option>
+                <option>XII</option>
+                <option>Graducation</option>
+                <option>Post granduation</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <div><label for="m-status">Marital status</label></div>
+            <div>
+              <select
+                id="m-status"
+                formControlName="maritalStatus"
+                (change)="maritalStatusChanged($event)"
+              >
+                <option>Single</option>
+                <option>Married</option>
+                <option>Divorced</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="family-details details" formGroupName="familyDetails">
+      <div class="form">
+        <div class="header">
+          <p>Family Details</p>
+        </div>
+
+        <div class="row-1">
+          <div>
+            <div><label for="">Father name</label></div>
+            <div><input type="text" formControlName="fatherName" /></div>
+          </div>
+
+          <div>
+            <div><label for="">Mother name</label></div>
+            <div><input type="text" formControlName="motherName" /></div>
+          </div>
+
+          <div>
+            <div><label for="">Husband name</label></div>
+            <div><input type="text" formControlName="husbandName" /></div>
+          </div>
+        </div>
+
+        <div class="row-2">
+          <div>
+            <div><label for="">No of childs</label></div>
+            <div>
+              <input type="number" formControlName="noOfChilds" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-details details" formGroupName="contactDetails">
+      <div class="header">
+        <p>Contact Details</p>
+      </div>
+      <div class="form">
+        <div class="row-1">
+          <div>
+            <div><label for="">Phone no</label></div>
+            <div>
+              <input type="number" id="" formControlName="phoneno" />
+            </div>
+          </div>
+
+          <div>
+            <div><label for="">Email</label></div>
+            <div><input type="text" id="" formControlName="email" /></div>
+          </div>
+
+          <div>
+            <div><label for="">Address</label></div>
+            <div><input type="text" id="" formControlName="address" /></div>
+          </div>
+        </div>
+        <div class="row-2" id="contact-details-row-2">
+          <div>
+            <div><label for="">City</label></div>
+            <div><input type="text" id="" formControlName="city" /></div>
+          </div>
+
+          <div>
+            <div><label for="">State</label></div>
+            <div><input type="text" id="" formControlName="state" /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="course-details details" formGroupName="courseDetails">
+      <div class="header">
+        <p>Course Details</p>
+      </div>
+      <div class="form">
+        <div class="row-1">
+          <div>
+            <div><label for="">Course id</label></div>
+            <div>
+              <div class="course-search">
+                <input type="text" id="" formControlName="courseId" id="tf" />
+                <div class="temp">
+                  <button (click)="btnClick()">
+                    <fa-icon [icon]="faMagnifyingGlass"></fa-icon>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <div><label for="">Course name</label></div>
+            <div><input type="text" id="" formControlName="courseName" /></div>
+          </div>
+
+          <div>
+            <div><label for="">Course duration</label></div>
+            <div>
+              <input type="text" id="" formControlName="courseDuration" />
+            </div>
+          </div>
+        </div>
+
+        <div class="course-details-row-2">
+          <div>
+            <div><label for="">Course description</label></div>
+            <div>
+              <textarea id="" formControlName="courseDescription"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <div class="course-details-row-3">
+          <div>
+            <div><label for="">Provided by</label></div>
+            <div><input type="text" id="" formControlName="providedBy" /></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="final-row">
+      <button type="button" (click)="register()">Register</button>
+    </div>
+  </form>
+</div>
+
+<!-- 
+        personal details : firstname, lastname, dob, aadhar no, education qualification, marital status
+        family details : father name, mother name, husband name, no of childs
+        Contact Details:  phone no, email, address, city , state
+        Training Course Details:
+        course id, course name, course description, duration, provided by
+ -->

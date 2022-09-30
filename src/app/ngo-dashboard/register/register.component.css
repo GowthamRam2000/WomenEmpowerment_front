@@ -1,0 +1,148 @@
+.container {
+  width: 80rem;
+  margin: 5rem auto;
+  font-family: "Rubik", sans-serif;
+}
+
+.main-header {
+  margin-bottom: 3rem;
+  font-size: 3.6rem;
+  font-weight: bold;
+  text-align: center;
+  color: #0f79e2;
+}
+
+.details {
+  padding: 2rem;
+  border: 1px solid #000;
+  border-radius: 7px;
+}
+
+.header p {
+  font-size: 2.4rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+  color: #0f79e2;
+}
+
+.row-1 {
+  margin-bottom: 2rem;
+}
+
+.row-1,
+.row-2 {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2rem;
+}
+
+.form input,
+.form select {
+  width: 23rem;
+  height: 3.5rem;
+  font-size: 2rem;
+  background-color: #f7f7f7;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.row-1 div,
+.row-2 div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.personal-details {
+  margin-bottom: 2rem;
+}
+
+.family-details {
+  margin-bottom: 2rem;
+}
+
+#contact-details-row-2 {
+  justify-content: flex-start;
+  gap: 3.6rem;
+}
+
+.contact-details {
+  margin-bottom: 2rem;
+}
+
+.course-details-row-2 div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.course-details-row-2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.course-details-row-2 textarea {
+  width: 76rem;
+  height: 7rem;
+  background-color: #f7f7f7;
+  border: none;
+  border-radius: 5px;
+  font-family: "Rubik", sans-serif;
+  font-size: 2rem;
+  padding: 5px 10px;
+}
+
+.course-details-row-3 {
+  font-size: 2rem;
+}
+
+.course-details-row-3 div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.course-details-row-3 input {
+  width: 76rem;
+}
+
+#course-row-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+#course-row-1 input {
+  width: 100%;
+}
+
+.final-row {
+  text-align: center;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  margin-top: 2.5rem;
+  border-top: 2px solid #ddd;
+}
+
+.final-row button {
+  padding: 12px 34px;
+  font-size: 2rem;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  background-color: #0f79e2;
+  color: white;
+}
+
+.final-row button:hover {
+  background-color: #0e6dcb;
+}
+
+input.ng-invalid.ng-touched {
+  border: 2px solid #dc3545;
+}
+
+.project-in-charge {
+  margin-bottom: 2rem;
+}

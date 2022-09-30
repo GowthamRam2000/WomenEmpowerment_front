@@ -1,0 +1,20 @@
+<div class="container">
+  <table>
+    <thead>
+      <tr>
+        <th class="one">S.no</th>
+        <th class="two">NGO Name</th>
+        <th class="three">Contact No</th>
+        <th class="four">No of Courses</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let ngo of ngos; let i = index">
+        <td>{{ i }}</td>
+        <td>{{ ngo.name }}</td>
+        <td>{{ ngo.contact }}</td>
+        <td>{{ ngo.courses }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

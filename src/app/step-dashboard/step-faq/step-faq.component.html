@@ -1,0 +1,64 @@
+<div class="container">
+  <div class="header">
+    <p>Frequently Asked Question(FAQs)</p>
+  </div>
+
+  <div class="qna">
+    <div class="question">
+      <div>Q.</div>
+      <p>What is the minimum age Criteria for registration?</p>
+    </div>
+    <div class="answer">
+      <div>A.</div>
+      <p>The minimum age required to register for the course is 16 years</p>
+    </div>
+  </div>
+
+  <div class="qna">
+    <div class="question">
+      <div>Q.</div>
+      <p>Sould we pay for courses once course is completed?</p>
+    </div>
+    <div class="answer">
+      <div>A.</div>
+      <p>The courses/training provided here are absolutely free!</p>
+    </div>
+  </div>
+
+  <div class="qna">
+    <div class="question">
+      <div>Q.</div>
+      <p>Can we leave the course in between?</p>
+    </div>
+    <div class="answer">
+      <div>A.</div>
+      <p>
+        Yes the courses can be left in between but only after the permission
+        from the NGOs.
+      </p>
+    </div>
+  </div>
+
+  <div class="qna">
+    <div class="question">
+      <div>Q.</div>
+      <p>What is the maximum duration of the course?</p>
+    </div>
+    <div class="answer">
+      <div>A.</div>
+      <p>
+        Actually it depends on the domain itself. It way vary from 10hours to
+        70hours
+      </p>
+    </div>
+  </div>
+
+  <div *ngFor="let item of userFaqs">
+    <app-faq-item [faq]="item"></app-faq-item>
+  </div>
+
+  <div class="post-query">
+    <div><textarea type="text" placeholder="Post a query" #tf></textarea></div>
+    <div><button (click)="postQuery()">Post</button></div>
+  </div>
+</div>

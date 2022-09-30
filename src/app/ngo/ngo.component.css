@@ -1,0 +1,12 @@
+.container {
+  width: 85%;
+  height: 500px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1.3fr 4fr;
+}
+
+.col1 {
+  margin-top: 6.4rem;
+}

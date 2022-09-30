@@ -1,0 +1,83 @@
+<div class="container">
+  <div class="header">
+    <h1>NGO FAQs</h1>
+  </div>
+  <div class="ngo-faqs">
+    <table>
+      <thead>
+        <tr>
+          <td class="one">Sno</td>
+          <td class="two">Question</td>
+          <td class="three">Answer</td>
+          <td class="four">Action</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let question of ngoQuestions; let i = index">
+          <td class="sno">{{ i + 1 }}</td>
+          <td>
+            <div class="question">
+              <input type="text" value="{{ question.question }}" />
+            </div>
+          </td>
+          <td>
+            <div class="answer">
+              <input
+                type="text"
+                value="{{ question.answer }}"
+                (input)="enterAnswer($event)"
+              />
+            </div>
+          </td>
+          <td>
+            <div class="btn-container">
+              <button class="btn" (click)="answer(i)">Answer</button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="container-buttom">
+  <div class="header">
+    <h1>User FAQs</h1>
+  </div>
+  <div class="user-faqs">
+    <table>
+      <thead>
+        <tr>
+          <td class="one">Sno</td>
+          <td class="two">Question</td>
+          <td class="three">Answer</td>
+          <td class="four">Action</td>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let question of userQuestions; let i = index">
+          <td class="sno">{{ i + 1 }}</td>
+          <td>
+            <div class="question">
+              <input type="text" value="{{ question.question }}" />
+            </div>
+          </td>
+          <td>
+            <div class="answer">
+              <input
+                type="text"
+                value="{{ question.answer }}"
+                (input)="enterAnswer($event)"
+              />
+            </div>
+          </td>
+          <td>
+            <div class="btn-container">
+              <button class="btn" (click)="userAnswer(i)">Answer</button>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

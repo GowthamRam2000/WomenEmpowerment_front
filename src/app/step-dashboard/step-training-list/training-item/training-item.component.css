@@ -1,0 +1,66 @@
+.container {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  font-family: "Rubik", sans-serif;
+
+  border: 2px solid #ddd;
+  border-radius: 7px;
+  padding: 3.6rem;
+  margin-bottom: 5px;
+}
+
+.col-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.course-name {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.course-description,
+.course-duration,
+.course-provider {
+  font-size: 2rem;
+}
+
+.course-duration {
+  display: flex;
+  gap: 2rem;
+}
+
+.course-duration .c1 {
+  font-weight: bold;
+}
+
+.course-provider {
+  display: flex;
+  gap: 2rem;
+}
+
+.course-provider .c1 {
+  font-weight: bold;
+}
+
+.col-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col-2 button {
+  padding: 12px 24px;
+  font-family: "Rubik", sans-serif;
+  background-color: #0f79e2;
+  border: none;
+  color: #fff;
+  border-radius: 5px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.col-2 button:hover {
+  background-color: #0e6dcb;
+}
